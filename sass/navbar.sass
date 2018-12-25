@@ -1,0 +1,49 @@
+@import "base"
+
+// Custom navbar settings
+.navbar
+	background: $primary-dark
+	text-align: center
+	transition: all 0.3s ease
+	.navbar-brand img
+		height: 60px
+	.navbar-toggler
+		border: none
+		outline: none
+		.navbar-toggler-icon
+			background-image: url("data:image/svg+xml;charset=utf8,%3Csvg viewBox='0 0 32 32' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath stroke='rgba(0, 0, 0, 1)' stroke-width='2' stroke-linecap='round' stroke-miterlimit='10' d='M4 8h24M4 16h24M4 24h24'/%3E%3C/svg%3E")
+	.nav-item
+		&.active, &.active:hover
+			.nav-link
+				border-right: 6px $primary-light double
+				color: $primary-light
+				@media( #{$bp-md})
+					border-bottom: 6px $primary-light double
+					border-right: none
+	.navbar-nav, .nav-item:hover
+		.nav-link
+			border-right: 6px $primary-dark double
+			color: rgba($primary-light, .6)
+			font-family: $serif
+			font-size: 1.5rem
+			margin: .5rem
+			padding: .5rem 1.5rem
+			text-align: right
+			transition: $transition-val
+			@media( #{$bp-md})
+				padding: 1rem 1.5rem
+				border-right: none
+				font-size: 1.4rem
+	.nav-item:hover .nav-link
+		color: $primary-light
+
+// 100% height mobile menu
+@media( #{$bp-sm})
+	.navbar-collapse
+		&.collapse
+			height: 100vh
+			max-height: none
+			overflow-y: auto
+			transition: $transition-val
+		&.collapsing
+			height: 0 !important
