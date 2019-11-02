@@ -1,8 +1,8 @@
 # Initial
 misc
 
-# Created by https://www.gitignore.io/api/macos,sublimetext,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=macos,sublimetext,visualstudiocode
+# Created by https://www.gitignore.io/api/sass,macos,sublimetext,visualstudiocode
+# Edit at https://www.gitignore.io/?templates=sass,macos,sublimetext,visualstudiocode
 
 ### macOS ###
 # General
@@ -31,6 +31,12 @@ Icon
 Network Trash Folder
 Temporary Items
 .apdisk
+
+### Sass ###
+.sass-cache/
+*.css.map
+*.sass.map
+*.scss.map
 
 ### SublimeText ###
 # Cache files for Sublime Text
@@ -75,4 +81,5 @@ GitHub.sublime-settings
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/macos,sublimetext,visualstudiocode
+# End of https://www.gitignore.io/api/sass,macos,sublimetext,visualstudiocode
+
