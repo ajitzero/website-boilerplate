@@ -1,8 +1,56 @@
-# Initial
-misc
+# Created by https://www.toptal.com/developers/gitignore/api/sass,macos,windows,sublimetext,visualstudiocode,vim,emacs
+# Edit at https://www.toptal.com/developers/gitignore?templates=sass,macos,windows,sublimetext,visualstudiocode,vim,emacs
 
-# Created by https://www.gitignore.io/api/sass,macos,sublimetext,visualstudiocode
-# Edit at https://www.gitignore.io/?templates=sass,macos,sublimetext,visualstudiocode
+### Emacs ###
+# -*- mode: gitignore; -*-
+*~
+\#*\#
+/.emacs.desktop
+/.emacs.desktop.lock
+*.elc
+auto-save-list
+tramp
+.\#*
+
+# Org-mode
+.org-id-locations
+*_archive
+
+# flymake-mode
+*_flymake.*
+
+# eshell files
+/eshell/history
+/eshell/lastdir
+
+# elpa packages
+/elpa/
+
+# reftex files
+*.rel
+
+# AUCTeX auto folder
+/auto/
+
+# cask packages
+.cask/
+dist/
+
+# Flycheck
+flycheck_*.el
+
+# server auth directory
+/server/
+
+# projectiles files
+.projectile
+
+# directory configuration
+.dir-locals.el
+
+# network security
+/network-security.data
+
 
 ### macOS ###
 # General
@@ -70,6 +118,24 @@ bh_unicode_properties.cache
 # https://packagecontrol.io/packages/sublime-github
 GitHub.sublime-settings
 
+### Vim ###
+# Swap
+[._]*.s[a-v][a-z]
+[._]*.sw[a-p]
+[._]s[a-rt-v][a-z]
+[._]ss[a-gi-z]
+[._]sw[a-p]
+
+# Session
+Session.vim
+
+# Temporary
+.netrwhist
+# Auto-generated tag files
+tags
+# Persistent undo
+[._]*.un~
+
 ### VisualStudioCode ###
 .vscode/*
 !.vscode/settings.json
@@ -81,5 +147,29 @@ GitHub.sublime-settings
 # Ignore all local history of files
 .history
 
-# End of https://www.gitignore.io/api/sass,macos,sublimetext,visualstudiocode
+### Windows ###
+# Windows thumbnail cache files
+Thumbs.db
+ehthumbs.db
+ehthumbs_vista.db
 
+# Dump file
+*.stackdump
+
+# Folder config file
+[Dd]esktop.ini
+
+# Recycle Bin used on file shares
+$RECYCLE.BIN/
+
+# Windows Installer files
+*.cab
+*.msi
+*.msix
+*.msm
+*.msp
+
+# Windows shortcuts
+*.lnk
+
+# End of https://www.toptal.com/developers/gitignore/api/sass,macos,windows,sublimetext,visualstudiocode,vim,emacs
